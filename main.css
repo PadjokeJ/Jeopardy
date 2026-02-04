@@ -70,6 +70,23 @@ html, body {
   color: #eee;
 }
 
+.question, .answer {
+  display: none;
+  width: calc(100vw - 80px);
+  height: calc(100vh - 80px);
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  margin: 0;
+
+  background-color: #fff;
+  border-radius: 25px;
+
+  box-shadow: black 0 0 100px;
+
+  font-size: 60px;
+  font-weight: bold;
+}
 .show {
   display: block;
 }
