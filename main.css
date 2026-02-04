@@ -1,0 +1,76 @@
+html, body {
+  margin: 0;
+  font-family: sans;
+  display: flex;
+}
+
+#board {
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.category {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 10px 10px;
+  border-radius: 25px;
+  box-shadow: #e0e0e0 0 0 10px;
+  overflow: clip;
+}
+
+.category_header {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+
+}
+
+.questbutton {
+  flex: 1;
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+
+  border: 5px solid;
+  border-color: #ffffff;
+
+  background-color: #ffffff;
+}
+
+.questbutton:not(.complete):hover {
+  --angle: 0deg;
+  border: 5px solid;
+  border-image: linear-gradient(var(--angle), #ffdddd, #ddffdd, #ddddff);
+  border-image-slice: 1;
+  animation: 2s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.complete {
+  background-color: #eee;
+  border-color: #eee;
+  color: #eee;
+}
+
+.show {
+  display: block;
+}
+
