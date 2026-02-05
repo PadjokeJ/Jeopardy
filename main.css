@@ -18,7 +18,7 @@ html, body {
   flex-direction: column;
   margin: 10px 10px;
   border-radius: 25px;
-  box-shadow: #e0e0e0 0 0 10px;
+  box-shadow: #d0d0d0 0 0 10px;
   overflow: clip;
 }
 
@@ -38,7 +38,7 @@ html, body {
   font-weight: bold;
   font-size: 30px;
 
-  border: 5px solid;
+  border: 10px solid;
   border-color: #ffffff;
 
   background-color: #ffffff;
@@ -46,7 +46,6 @@ html, body {
 
 .questbutton:not(.complete):hover {
   --angle: 0deg;
-  border: 5px solid;
   border-image: linear-gradient(var(--angle), #ffdddd, #ddffdd, #ddddff);
   border-image-slice: 1;
   animation: 2s rotate linear infinite;
