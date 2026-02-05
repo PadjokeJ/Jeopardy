@@ -4,6 +4,7 @@ fetch("./questions.json")
   .then((response) => response.json())
   .then((json) => {
     for (i in json.Categories) {
+      console.log(i);
       board_div = document.getElementById("board");
       
       col = document.createElement("div");
@@ -19,6 +20,7 @@ fetch("./questions.json")
       board_div.append(col);
 
       current = json["Categories"][i];
+      console.log(current);
       for (j in current) {
         question = document.createElement("button");
         question.id = i + "_" + j;
@@ -42,6 +44,7 @@ fetch("./questions.json")
         question.addEventListener("click", (event) => {
           id = event.target.id;
           document.getElementById(id).classList.add("complete");
+          document.getElementById(id).disabled = true;
           qval = document.getElementById(id + "_q").innerText;
           aval = document.getElementById(id + "_a").innerText;
 

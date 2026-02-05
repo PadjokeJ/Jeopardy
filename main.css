@@ -72,8 +72,9 @@ html, body {
 
 .question, .answer {
   display: none;
-  width: calc(100vw - 80px);
-  height: calc(100vh - 80px);
+  padding: 90px;
+  width: calc(100vw - 260px);
+  height: calc(100vh - 260px);
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -86,6 +87,7 @@ html, body {
 
   font-size: 60px;
   font-weight: bold;
+  text-align: center;
 }
 .show {
   display: block;
